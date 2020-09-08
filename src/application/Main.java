@@ -1,5 +1,6 @@
 package application;
 
+
 import java.io.IOException;
 
 import javafx.application.Application;
@@ -11,12 +12,20 @@ import javafx.stage.Stage;
 public class Main extends Application {
 	
 	private static Scene mainScene;
+	
+	public static void main(String[] args) {
+		launch(args);
+	}
+
 	@Override
-	public void start(Stage primaryStage) {
+	public void start(Stage primaryStage) throws Exception {
 		try {
 			FXMLLoader loader = new FXMLLoader(getClass().getResource("/gui/MainView.fxml"));
 			ScrollPane scrollPane = loader.load();
 			
+			/*
+			 * Setting the Scrollpane to fit the main screen;
+			 * */
 			scrollPane.setFitToHeight(true);
 			scrollPane.setFitToWidth(true);
 			
@@ -31,9 +40,7 @@ public class Main extends Application {
 
 	public static Scene getMainScene() {
 		return mainScene;
+		
 	}
-	
-	public static void main(String[] args) {
-		launch(args);
-	}
+
 }
