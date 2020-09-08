@@ -5,7 +5,7 @@ Application for department and seller registration.
 * [Screenshots](#Screenshots)
 * [General info](#general-info)
 * [License and copyright](#license-and-copyright)
-* [Acknowledgements](#acknowledgements)
+* [Acknowledgements](#Acknowledgments)
 
 ## Screenshots
 
